@@ -1,5 +1,9 @@
 # hiking-backend
-部署版本連結：[https://staging-server.gohiking.app/](https://staging-server.gohiking.app/)
+~~原始部署版本連結：[https://staging-server.gohiking.app/](https://staging-server.gohiking.app/)~~(已經無法存取)
+## 個人重新部署版本
+- 後端API URL：[https://gohiking-server.herokuapp.com](https://gohiking-server.herokuapp.com)
+- 前端頁面URL：[https://bobyzh.github.io/gohiking-web](https://bobyzh.github.io/gohiking-web)
+    - 專案連結：[https://github.com/BOBYZH/gohiking-web](https://github.com/BOBYZH/gohiking-web)
 
 ## 專案安裝步驟
 
@@ -200,33 +204,10 @@ touch ./database/database.sqlite
 }
 ```
 
-## 其他API(步道、景點......)
-WIP
+## 其他API說明(步道、景點......)
+非本人所寫故省略
 
 ## 附註
-
-### Heroku專用seeder/factory設定
-- DatabaseSeeder.php改成：
-```
-function autoIncrementTweak($id)
-{
-    $range = 4; // 根據ClearDB設定
-    return $id * 10 - 10 + $range;
-
-    // return $id; // 本機設定
-}
-```
-
-- UserFactory.php改成：
-```
-function factoryAutoIncrementTweak($id)
-{
-    $range = 4; // 根據ClearDB設定
-    return $id * 10 - 10 + $range;
-
-    // return $id; // 本機設定
-}
-```
 
 ### token期限相關設定(供前端參考)
 ```
