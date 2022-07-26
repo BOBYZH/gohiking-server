@@ -2,7 +2,7 @@
 ~~原始部署版本連結：[https://staging-server.gohiking.app/](https://staging-server.gohiking.app/)~~(已經無法存取)
 ## 個人重新部署版本
 - 後端API URL：[https://gohiking-server.herokuapp.com](https://gohiking-server.herokuapp.com)
-- 前端頁面URL：[https://bobyzh.github.io/gohiking-web](https://bobyzh.github.io/gohiking-web)
+- 前端頁面URL：[https://gohiking-web.netlify.app/](https://gohiking-web.netlify.app/)
     - 專案連結：[https://github.com/BOBYZH/gohiking-web](https://github.com/BOBYZH/gohiking-web)
 
 ## 專案安裝步驟
