@@ -104,7 +104,7 @@ class PassportAuthController extends Controller
             // 寄送驗證碼信件，參考：https://ithelp.ithome.com.tw/articles/10252073
             $email = $request->email;
             // $userToken = $findUser->remember_token;
-            $url = "https://staging-web.gohiking.app/Verify2";
+            $url = "https://gohiking-web.netlify.app/Verify2";
             $text = '你的驗證碼是：' . $verificationCodes[0] . ', ' . $verificationCodes[1] . ', ' . $verificationCodes[2] . ', ' . $verificationCodes[3] . '；若確定要更改密碼，請回到APP輸入上述4位數字：' . $url;
 
             // 將驗證碼寫入資料庫的使用者表格，以便在驗證時對應
