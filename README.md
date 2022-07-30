@@ -1,10 +1,9 @@
 # hiking-backend
-~~原始部署版本連結：[https://staging-server.gohiking.app/](https://staging-server.gohiking.app/)~~(已經無法存取)
+- ~~原始部署版本連結：[https://staging-server.gohiking.app/](https://staging-server.gohiking.app/)~~(已經無法存取)
 ## 個人重新部署版本
 - 後端API URL：[https://gohiking-server.herokuapp.com](https://gohiking-server.herokuapp.com)
 - 前端頁面URL：[https://gohiking-web.netlify.app/](https://gohiking-web.netlify.app/)
     - 專案連結：[https://github.com/BOBYZH/gohiking-web](https://github.com/BOBYZH/gohiking-web)
-
 ## 專案安裝步驟
 
 ```
@@ -105,6 +104,8 @@ touch ./database/database.sqlite
 
 ### 第三方登入
 0. 目前僅支援Facebook、Google、Apple，需由前端向社群平台驗證後取得帳戶資料
+  - Facebook登入由於API服務未持續啟用而關閉，目前已經無法使用
+  - Google與Apple的權限由於非本人管理，目前僅能在開發環境使用
 1. 發送POST /api/auth/social/callback，Body(x-www-form-urlencoded)需攜帶：
 
 ```
